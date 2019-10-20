@@ -27,4 +27,9 @@ class PostController extends Controller
     {
         return view('post/edit');
     }
+
+    public function store()
+    {
+        dd(\Request::all(['title']));
+    }
 }

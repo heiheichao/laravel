@@ -22,3 +22,6 @@ Route::get('/posts/search', 'PostController@search');
 Route::get('/posts/{post}', 'PostController@show');
 Route::get('/posts/{post}/edit', 'PostController@edit');
 Route::put('/posts/{post}', 'PostController@update');
+
+
+Route::get('/user', 'UserController@index');
